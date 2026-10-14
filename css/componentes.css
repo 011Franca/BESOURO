@@ -1,0 +1,153 @@
+/* Componentes usados em várias seções: logo, botões, selos e títulos de seção */
+
+.highlight-lime {
+    color: #bcf868;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #a1a1aa;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #bcf868;
+    border-radius: 50%;
+}
+
+.section-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: #bcf868;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: clamp(32px, 4vw, 48px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    color: #a1a1aa;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    color: #bcf868;
+}
+
+.btn-outline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background-color: #161616;
+    border: 1px solid #222222;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: border-color 0.2s;
+}
+
+.btn-outline:hover {
+    border-color: #bcf868;
+}
+
+.arrow-circle {
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+    color: #0c0c0c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-outline:hover .arrow-circle {
+    background-color: #bcf868;
+}
+
+.btn-lime {
+    background-color: #bcf868;
+    color: #0c0c0c;
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-lime:hover {
+    background-color: #a7e452;
+}
+
+.btn-text {
+    font-weight: 500;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s;
+}
+
+.btn-text:hover {
+    color: #bcf868;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+}
+
+.btn-dark {
+    background-color: #0c0c0c;
+    color: #ffffff;
+    padding: 20px 36px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color 0.2s;
+}
+
+.btn-dark:hover {
+    background-color: #27272a;
+}

@@ -1,0 +1,73 @@
+/* Seção "O que fazemos" */
+
+.services-section {
+    padding: 80px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background-color: #141414;
+    border: 1px solid #222222;
+    border-radius: 20px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    transition: border-color 0.3s;
+}
+
+.service-card:hover {
+    border-color: rgba(188, 248, 104, 0.4);
+}
+
+.service-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.service-icon {
+    width: 36px;
+    height: 36px;
+    color: #bcf868;
+}
+
+.service-num {
+    font-family: monospace;
+    color: #52525b;
+    font-size: 13px;
+}
+
+.service-body h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.service-body p {
+    color: #a1a1aa;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.service-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #222222;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.service-link:hover {
+    color: #bcf868;
+}

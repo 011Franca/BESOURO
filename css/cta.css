@@ -1,0 +1,31 @@
+/* Faixa verde de chamada final (CTA) */
+
+.cta-section {
+    padding: 80px 0;
+}
+
+.cta-banner {
+    background-color: #bcf868;
+    border-radius: 24px;
+    padding: 64px;
+    color: #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-dark {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.dot-dark {
+    background-color: #0c0c0c;
+}
+
+.cta-content h2 {
+    font-size: clamp(32px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-top: 16px;
+}

@@ -1,0 +1,32 @@
+/* Cabeçalho fixo e menu de navegação */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(12, 12, 12, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #222222;
+}
+
+.header-container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    gap: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a1a1aa;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+    transition: color 0.2s;
+}

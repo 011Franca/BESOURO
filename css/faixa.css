@@ -1,0 +1,24 @@
+/* Faixa animada (marquee) */
+
+.marquee-section {
+    background-color: #bcf868;
+    color: #0c0c0c;
+    padding: 16px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 40px 0;
+}
+
+.marquee-track {
+    display: inline-flex;
+    gap: 48px;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

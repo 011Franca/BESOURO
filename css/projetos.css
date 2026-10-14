@@ -1,0 +1,126 @@
+/* Seção de projetos e filtros */
+
+.projects-section {
+    padding: 80px 0;
+}
+
+.projects-right-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #222222;
+    color: #a1a1aa;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #bcf868;
+    border-color: #bcf868;
+    color: #0c0c0c;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    cursor: pointer;
+}
+
+.project-preview {
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+    border: 1px solid #222222;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.shape-forma { background-color: #fef3c7; color: #18181b; }
+
+.shape-orbita { background-color: #d4e4cd; color: #18181b; }
+
+.shape-noma { background-color: #d1ccf8; color: #18181b; }
+
+.window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.window-dots span {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+
+.preview-brand {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.preview-heading {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title-label {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.project-cat-sub {
+    font-weight: 400;
+    font-size: 12px;
+    color: #a1a1aa;
+    margin-left: 8px;
+}
+
+.project-arrow {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #222222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.project-card:hover .project-arrow {
+    background-color: #bcf868;
+    color: #0c0c0c;
+    border-color: #bcf868;
+}
