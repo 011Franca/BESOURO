@@ -5,9 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove a classe ativa de todos os botões
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Adiciona a classe ativa ao botão clicado
             button.classList.add('active');
 
             const filterValue = button.getAttribute('data-filter');
@@ -22,9 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // 2. Sanfona / Accordion da seção de Processo
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.parentElement;
+            item.classList.toggle('active');
+        });
+    });
 });
 
-// 2. Controle do Modal de Contato
+// 3. Controle do Modal de Contato
 const modal = document.getElementById('contact-modal');
 
 function openModal() {
@@ -46,28 +54,48 @@ window.addEventListener('click', (event) => {
     }
 });
 
-// 3. Simulação de Envio do Formulário
+// Fechar modal ao pressionar a tecla ESC
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && modal && modal.style.display === 'flex') {
+        closeModal();
+    }
+});
+
+// 4. Envio do Formulário para o WhatsApp
 function handleFormSubmit(event) {
     event.preventDefault();
-    closeModal();
 
-    // Cria notificação flutuante de sucesso
+    // Número de WhatsApp configurado para o atendimento
+    const numeroWhatsApp = "5511954411328"; 
+
+    // Captura os valores digitados no formulário
+    const nome = document.getElementById("modal-nome").value;
+    const contato = document.getElementById("modal-contato").value;
+    const mensagem = document.getElementById("modal-mensagem").value;
+
+    // Monta o texto formatado para a mensagem do WhatsApp
+    const textoMensagem = `Olá, vim pelo site da *Besouro®*!\n\n` +
+                          `*Nome:* ${nome}\n` +
+                          `*Contato:* ${contato}\n` +
+                          `*Mensagem:* ${mensagem ? mensagem : "Sem mensagem adicional."}`;
+
+    // Codifica o texto para formato de URL seguro
+    const textoURLEncoded = encodeURIComponent(textoMensagem);
+
+    // Cria o link do WhatsApp
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoURLEncoded}`;
+
+    // Abre o WhatsApp em uma nova aba
+    window.open(urlWhatsApp, "_blank");
+
+    // Fecha o modal e limpa o formulário
+    closeModal();
+    event.target.reset();
+
+    // Notificação flutuante de confirmação
     const toast = document.createElement('div');
     toast.className = 'toast-notification';
-    toast.innerHTML = '✨ Mensagem enviada com sucesso! Em breve entraremos em contato.';
-    
-    // Estilos inline rápidos para a notificação
-    toast.style.position = 'fixed';
-    toast.style.bottom = '24px';
-    toast.style.right = '24px';
-    toast.style.backgroundColor = '#bcf868';
-    toast.style.color = '#0c0c0c';
-    toast.style.padding = '16px 24px';
-    toast.style.borderRadius = '14px';
-    toast.style.fontWeight = '600';
-    toast.style.boxShadow = '0 10px 25px rgba(0,0,0,0.5)';
-    toast.style.zIndex = '3000';
-    toast.style.transition = 'opacity 0.3s';
+    toast.innerHTML = '✨ Redirecionando para o WhatsApp...';
 
     document.body.appendChild(toast);
 

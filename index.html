@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>besouro® | </title>
+    <title>besouro® | Estúdio Digital de Alta Performance</title>
+
+    <!-- Meta Tags SEO & Open Graph -->
+    <meta name="description" content="Estúdio digital focado em sites institucionais, e-commerce e landing pages de alto impacto. Design com personalidade e tecnologia com propósito.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="besouro® | Estúdio Digital">
+    <meta property="og:description" content="Pequeno no nome. Gigante no impacto. Criamos experiências digitais únicas para sua marca.">
+    <meta property="og:image" content="imagens/icone-besouro.png">
+
     <!-- Google Fonts Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Arquivos CSS separados por assunto (o responsivo.css deve ficar por último) -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/componentes.css">
@@ -19,6 +28,9 @@
     <link rel="stylesheet" href="css/rodape.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/responsivo.css">
+    
+    <!-- Favicon direcionado para a pasta imagens/ -->
+    <link rel="shortcut icon" href="imagens/icone-besouro.png" type="image/x-icon">
 </head>
 <body>
 
@@ -26,15 +38,16 @@
     <header class="header">
         <div class="container header-container">
             <a href="#" class="logo">
-                <svg class="logo-icon" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2a2 2 0 0 1 2 2v1.07A7.002 7.002 0 0 1 19 12v3a2 2 0 0 1-2 2h-1v2a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-2H7a2 2 0 0 1-2-2v-3a7.002 7.002 0 0 1 5-6.93V4a2 2 0 0 1 2-2m-3 8a4.994 4.994 0 0 0-4 4.89V15h2v-1.11A3.003 3.003 0 0 1 10 11V10H9m6 0h-1v1a3.003 3.003 0 0 1 3 2.89V15h2v-1.11A4.994 4.994 0 0 0 15 10Z"/>
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m8 2 1.88 1.88M14.12 3.88 16 2M9 7.13v-1a3 3 0 1 1 6 0v1"/>
+                    <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6M12 20v-9M6.5 9C4.6 8.8 3 7.1 3 5M6 13H2M3 21c0-2.1 1.7-3.9 3.8-4M20.97 5c0 2.1-1.6 3.8-3.5 4M22 13h-4M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
                 </svg>
                 <span>besouro®</span>
             </a>
             <nav class="nav-links">
                 <a href="#estudio">O estúdio</a>
-                <a href="#fazemos">O que fazemos</a>
                 <a href="#projetos">Projetos</a>
+                <a href="#fazemos">O que fazemos</a>
             </nav>
             <a href="#contato" class="btn-outline">
                 <span>Vamos conversar</span>
@@ -44,7 +57,7 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero-section" id="estudio">
+    <section class="hero-section" >
         <div class="container hero-grid">
             <div class="hero-content">
                 <div class="badge">
@@ -53,13 +66,15 @@
                 </div>
                 <h1 class="hero-title">
                     Pequeno no nome.<span class="title-beetle title-beetle-small" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2a2 2 0 0 1 2 2v1.07A7.002 7.002 0 0 1 19 12v3a2 2 0 0 1-2 2h-1v2a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-2H7a2 2 0 0 1-2-2v-3a7.002 7.002 0 0 1 5-6.93V4a2 2 0 0 1 2-2m-3 8a4.994 4.994 0 0 0-4 4.89V15h2v-1.11A3.003 3.003 0 0 1 10 11V10H9m6 0h-1v1a3.003 3.003 0 0 1 3 2.89V15h2v-1.11A4.994 4.994 0 0 0 15 10Z"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m8 2 1.88 1.88M14.12 3.88 16 2M9 7.13v-1a3 3 0 1 1 6 0v1"/>
+                            <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6M12 20v-9M6.5 9C4.6 8.8 3 7.1 3 5M6 13H2M3 21c0-2.1 1.7-3.9 3.8-4M20.97 5c0 2.1-1.6 3.8-3.5 4M22 13h-4M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
                         </svg>
                     </span><br>
                     Gigante no <span class="highlight-lime">impacto.</span><span class="title-beetle title-beetle-big" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2a2 2 0 0 1 2 2v1.07A7.002 7.002 0 0 1 19 12v3a2 2 0 0 1-2 2h-1v2a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-2H7a2 2 0 0 1-2-2v-3a7.002 7.002 0 0 1 5-6.93V4a2 2 0 0 1 2-2m-3 8a4.994 4.994 0 0 0-4 4.89V15h2v-1.11A3.003 3.003 0 0 1 10 11V10H9m6 0h-1v1a3.003 3.003 0 0 1 3 2.89V15h2v-1.11A4.994 4.994 0 0 0 15 10Z"/>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m8 2 1.88 1.88M14.12 3.88 16 2M9 7.13v-1a3 3 0 1 1 6 0v1"/>
+                            <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6M12 20v-9M6.5 9C4.6 8.8 3 7.1 3 5M6 13H2M3 21c0-2.1 1.7-3.9 3.8-4M20.97 5c0 2.1-1.6 3.8-3.5 4M22 13h-4M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
                         </svg>
                     </span>
                 </h1>
@@ -83,8 +98,9 @@
                     NATURALMENTE DIFERENTE
                 </div>
                 <div class="hero-graphic-box">
-                    <svg class="hero-graphic-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2a2 2 0 0 1 2 2v1.07A7.002 7.002 0 0 1 19 12v3a2 2 0 0 1-2 2h-1v2a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-2H7a2 2 0 0 1-2-2v-3a7.002 7.002 0 0 1 5-6.93V4a2 2 0 0 1 2-2m-3 8a4.994 4.994 0 0 0-4 4.89V15h2v-1.11A3.003 3.003 0 0 1 10 11V10H9m6 0h-1v1a3.003 3.003 0 0 1 3 2.89V15h2v-1.11A4.994 4.994 0 0 0 15 10Z"/>
+                    <svg class="hero-graphic-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m8 2 1.88 1.88M14.12 3.88 16 2M9 7.13v-1a3 3 0 1 1 6 0v1"/>
+                        <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6M12 20v-9M6.5 9C4.6 8.8 3 7.1 3 5M6 13H2M3 21c0-2.1 1.7-3.9 3.8-4M20.97 5c0 2.1-1.6 3.8-3.5 4M22 13h-4M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
                     </svg>
                 </div>
             </div>
@@ -184,7 +200,7 @@
                     <h2 class="section-title">Menos discurso.<br><span class="highlight-lime">Mais design.</span></h2>
                 </div>
                 <div class="projects-right-col">
-                    <p class="section-desc right-align">Um pouco do que podemos criar.<br>Explore nossos projetos conceituais.</p>
+                    <p class="section-desc right-align">Projetos reais criados para transformar a presença digital dos nossos clientes.</p>
                     <div class="filter-buttons" id="filter-buttons">
                         <button class="filter-btn active" data-filter="all">Todos</button>
                         <button class="filter-btn" data-filter="sites">Sites</button>
@@ -195,62 +211,62 @@
             </div>
 
             <div class="projects-grid" id="projects-grid">
-                <!-- Projeto 1 -->
-                <div class="project-card" data-category="sites">
+                <!-- Projeto 1 - Site Institucional -->
+                <a href="https://brunalopessm.github.io/SiteTransforme-se/" target="_blank" rel="noopener noreferrer" class="project-card" data-category="sites" style="text-decoration: none; color: inherit;">
                     <div class="project-preview shape-forma">
                         <div class="window-dots">
                             <span></span><span></span><span></span>
                         </div>
                         <div class="project-preview-content">
-                            <span class="preview-brand">forma.</span>
-                            <h4 class="preview-heading">A forma de habitar o mundo.</h4>
+                            <span class="preview-brand">Site Transforme-se</span>
+                            <h4 class="preview-heading">O conhecimento é o poder de tranformar.</h4>
                         </div>
                     </div>
                     <div class="project-footer">
-                        <span class="project-title-label">Forma <span class="project-cat-sub">Site institucional</span></span>
+                        <span class="project-title-label">Transforme-se <span class="project-cat-sub">Site institucional • Aline Mosken</span></span>
                         <span class="project-arrow">↗</span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Projeto 2 -->
-                <div class="project-card" data-category="ecommerce">
+                <!-- Projeto 2 - E-commerce -->
+                <a href="https://onebot-ph.github.io/FourHands/" target="_blank" rel="noopener noreferrer" class="project-card" data-category="ecommerce" style="text-decoration: none; color: inherit;">
                     <div class="project-preview shape-orbita">
                         <div class="window-dots">
                             <span></span><span></span><span></span>
                         </div>
                         <div class="project-preview-content">
-                            <span class="preview-brand">órbita®</span>
-                            <h4 class="preview-heading">Fora do comum.</h4>
+                            <span class="preview-brand">Four Hands</span>
+                            <h4 class="preview-heading">Loja virtual e experiência de compra online.</h4>
                         </div>
                     </div>
                     <div class="project-footer">
-                        <span class="project-title-label">Órbita <span class="project-cat-sub">E-commerce</span></span>
+                        <span class="project-title-label">Four Hands <span class="project-cat-sub">E-commerce</span></span>
                         <span class="project-arrow">↗</span>
                     </div>
-                </div>
+                </a>
 
-                <!-- Projeto 3 -->
-                <div class="project-card" data-category="landing">
+                <!-- Projeto 3 - Landing Page -->
+                <a href="#" class="project-card" data-category="landing" style="text-decoration: none; color: inherit;">
                     <div class="project-preview shape-noma">
                         <div class="window-dots">
                             <span></span><span></span><span></span>
                         </div>
                         <div class="project-preview-content">
-                            <span class="preview-brand">noma.</span>
-                            <h4 class="preview-heading">O trabalho muda. Você <em>evolui.</em></h4>
+                            <span class="preview-brand">besouro®</span>
+                            <h4 class="preview-heading">Estúdio digital. Ideias vivas.</h4>
                         </div>
                     </div>
                     <div class="project-footer">
-                        <span class="project-title-label">Noma <span class="project-cat-sub">Landing page</span></span>
+                        <span class="project-title-label">Besouro® <span class="project-cat-sub">Landing page institucional</span></span>
                         <span class="project-arrow">↗</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- POR TRÁS DO NOME / PROCESSO -->
-    <section class="process-section">
+    <section class="process-section" id="estudio">
         <div class="container process-grid">
             <div class="process-left">
                 <span class="section-tag">03 / POR TRÁS DO NOME</span>
@@ -337,11 +353,29 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="logo">
-                <svg class="logo-icon" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2a2 2 0 0 1 2 2v1.07A7.002 7.002 0 0 1 19 12v3a2 2 0 0 1-2 2h-1v2a3 3 0 0 1-3 3h-2a3 3 0 0 1-3-3v-2H7a2 2 0 0 1-2-2v-3a7.002 7.002 0 0 1 5-6.93V4a2 2 0 0 1 2-2m-3 8a4.994 4.994 0 0 0-4 4.89V15h2v-1.11A3.003 3.003 0 0 1 10 11V10H9m6 0h-1v1a3.003 3.003 0 0 1 3 2.89V15h2v-1.11A4.994 4.994 0 0 0 15 10Z"/>
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m8 2 1.88 1.88M14.12 3.88 16 2M9 7.13v-1a3 3 0 1 1 6 0v1"/>
+                    <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6M12 20v-9M6.5 9C4.6 8.8 3 7.1 3 5M6 13H2M3 21c0-2.1 1.7-3.9 3.8-4M20.97 5c0 2.1-1.6 3.8-3.5 4M22 13h-4M17.2 17c2.1.1 3.8 1.9 3.8 4"/>
                 </svg>
                 <span>besouro®</span>
             </div>
+
+            <!-- Logos de parceiros/apoiadores apontando para a pasta imagens/ -->
+            <div class="sponsors-logos">
+                <a href="https://www.sp.senac.br/" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/Senac_logo.svg.webp" alt="Senac">
+                </a>
+                <a href="https://doe.gerandofalcoes.com" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/Design-sem-nome-40.png" alt="Gerando Falcões">
+                </a>
+                <a href="https://www.serasaexperian.com.br/transforme-se/" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/transforme-se-banner.webp" alt="Transforme-se">
+                </a>
+                <a href="https://www.vivendadacrianca.com.br/" target="_blank" rel="noopener noreferrer">
+                    <img src="imagens/logo.png" alt="Vivenda da Criança">
+                </a>
+            </div>
+
             <div class="footer-copy">Design por instinto. Digital por natureza.</div>
         </div>
     </footer>
@@ -351,20 +385,33 @@
         <div class="modal-card">
             <button class="modal-close" onclick="closeModal()">✕</button>
             <h3>Vamos conversar?</h3>
-            <p>Preencha os campos abaixo e entraremos em contato com você em breve.</p>
+            <p>Preencha os campos abaixo para iniciar o atendimento no WhatsApp.</p>
             <form onsubmit="handleFormSubmit(event)" class="modal-form">
                 <div class="form-group">
-                    <label>Seu nome</label>
-                    <input type="text" required placeholder="Nome completo">
+                    <label for="modal-nome">Seu nome</label>
+                    <input type="text" id="modal-nome" required placeholder="Nome completo">
                 </div>
                 <div class="form-group">
-                    <label>E-mail ou WhatsApp</label>
-                    <input type="text" required placeholder="seu@email.com">
+                    <label for="modal-contato">E-mail ou WhatsApp</label>
+                    <input type="text" id="modal-contato" required placeholder="(11) 99999-9999 ou seu@email.com">
                 </div>
-                <button type="submit" class="btn-lime submit-btn">Enviar mensagem</button>
+                <div class="form-group">
+                    <label for="modal-mensagem">Como podemos te ajudar?</label>
+                    <textarea id="modal-mensagem" rows="3" placeholder="Conte um pouco sobre o seu projeto..."></textarea>
+                </div>
+                <button type="submit" class="btn-lime submit-btn">Enviar no WhatsApp ↗</button>
             </form>
         </div>
     </div>
+
+    <!-- COMPONENTE VLIBRAS CORRIGIDO -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js" onload="new window.VLibras.Widget('https://vlibras.gov.br/app')"></script>
 
     <!-- Arquivo JavaScript Externo -->
     <script src="funcional.js"></script>

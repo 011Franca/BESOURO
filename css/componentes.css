@@ -151,3 +151,17 @@
 .btn-dark:hover {
     background-color: #27272a;
 }
+/* Notificação Toast */
+.toast-notification {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #bcf868;
+    color: #0c0c0c;
+    padding: 16px 24px;
+    border-radius: 14px;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 3000;
+    transition: opacity 0.3s;
+}
